@@ -42,7 +42,7 @@
       {
         "id": "ENCLAVE-01",
         "description": "Build and verify the Oracle .eif (Enclave Image File) for AWS Nitro deployment.",
-        "status": "[ ]"
+        "status": "[x]"
       },
       {
         "id": "RATIFY-01",
