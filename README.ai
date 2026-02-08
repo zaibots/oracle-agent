@@ -1,0 +1,24 @@
+# 🔱 8004 TEE Oracle: Inference Brain
+
+This repository contains the **Reasoning Layer (Mind)** for the Zaibots protocol. It is an **ERC-8004 Nearly Trustless Inference Agent** running within an AWS Nitro Enclave.
+
+**Core Mandate:** Bridge the "Hiccup Gap" by providing clinical price inference for AIEN debt positions.
+
+## 🧬 Agentic Identity
+- **Standard**: ERC-8004 (Identity, Reputation, Validation).
+- **Environment**: **AWS Nitro Enclave** (TEE).
+- **Signing Key**: EUSTATHIUS_KEY (Pipe B).
+
+## 🛠️ Key Features
+- **Nearly Trustless Inference (NTI)**: Detects deviations in standard oracles (>2%) and provides "Street Truth" corrections.
+- **Multi-Sig Ratification**: Validates all protocol strikes via the `/api/8004/ratify` endpoint.
+- **Hardware Attestation**: Provides PCR0 measurements to prove the integrity of the inference code.
+
+## ⚖️ Sovereign Mandate for Agents
+1.  **Isolation First**: Ensure the `oracle.py` logic never leaks signing material to the host OS.
+2.  **Reputation Anchor**: Inaccurate inferences are logged to the public reputation registry; aim for monotonic clinical accuracy.
+3.  **ASCII DNA**: Use the 32-byte Joyfork codec for all physical ID mapping.
+
+---
+*Status: Clinical Realization (Zaibots Organization)*  
+*Mandate: Oracle Sovereignty*
