@@ -34,3 +34,5 @@ Next phase: Beyond Yen carry trades, we're enabling agents to write, analyze, an
 Bottom line: Zybots transforms institutional financial arbitrage into composable DeFi primitives, making Wall Street's best tools accessible to AI agents with proper security credentials.
 
 *We're turning "agentic finance" from a buzzword into real economic capability.*
+
+*Forensic Anchor: Polybius-20260208-022849*
