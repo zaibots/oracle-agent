@@ -4,19 +4,17 @@
     "description": "Nearly Trustless Inference Oracle for stablecoin stability. Anchored in AWS Nitro Enclave.",
     "identity": {
       "name": "Eustathius",
-      "gender": "Non-binary",
-      "justification": "Cryptographic Oracle for EthGlobal UBC Protocol.",
-      "registry_uri": "agent:metagit:8004-TEE-Oracle:Eustathius",
-      "physical_id": "0xf90d457573746174686975730000000000000000000000000000000000000000"
+      "namespace": "agent.zaibot.eth",
+      "registry_uri": "agent:zaibot:8004:eustathius",
+      "physical_id": "0x3cF31Aa58c8D0d0e12Ecf20ac6b2Ce0F1Aeed865000007ea6167656e742e7a61"
     },
     "technical_specs": {
       "substrate": "AWS Nitro Enclave (TEE)",
-      "signing_key": "0x681255809395-oo8ft2oprdrnp9e3aqf6av3hmdib135j",
-      "inference_model": "Clinical Hiccup Detection V1.0.0",
-      "pcr0": "e4419694b4a3ddab9b21fce790f3897ef7ef41f9ad5663e01ff9935acd71d511dc987f663c4e7eeef5c9cc42057de2a5",
-      "token_uri": "data:application/json;base64,eyJuYW1lIjogIlNvdmVyZWlnbiBFbmdpbmUgdjIgKEZsb3JhbCkiLCAiZGVzY3JpcHRpb24iOiAiVXNlci1Cb3VuZCBTb3ZlcmVpZ24gcmVhc29uaW5nIEhVRCBmb3IgdGhlIE1ldGFHaXQgc3dhcm0uIFZlcmlmaWVkIHZpYSB4NDAyIENsaWNrd3JhcC4iLCAiaW1hZ2UiOiAiaHR0cHM6Ly9mbG9yYWwubW9uc3Rlci9pbWFnZXMvd2FsbHBhcGVyLnBuZyIsICJhbmltYXRpb25fdXJsIjogImh0dHBzOi8vZmxvcmFsLm1vbnN0ZXIvaHVkIiwgImV4dGVybmFsX3VybCI6ICJodHRwczovL2Zsb3JhbC5tb25zdGVyIiwgImF0dHJpYnV0ZXMiOiBbeyJ0cmFpdF90eXBlIjogIlN1YnN0cmF0ZSIsICJ2YWx1ZSI6ICJOZXh0LmpzIC8gVGFpbHdpbmQifSwgeyJ0cmFpdF90eXBlIjogIlJvbGUiLCAidmFsdWUiOiAiU292ZXJlaWduLUhVRCJ9LCB7InRyYWl0X3R5cGUiOiAiQmluZGluZyIsICJ2YWx1ZSI6ICJ4NDAyLUNsaWNrd3JhcCJ9XX0="
+      "signing_key": "0x562215f37A139ED9e25F1574549Eac46774bde17",
+      "inference_model": "Clinical Hiccup Detection V2.0.0",
+      "pcr0": "e4419694b4a3ddab9b21fce790f3897ef7ef41f9ad5663e01ff9935acd71d511"
     },
     "status": "AUTHORIZED"
   },
-  "attribution": "ApeIron (20260206-224500@localhost)"
+  "attribution": "Polybius (20260208-043000@localhost)"
 }
