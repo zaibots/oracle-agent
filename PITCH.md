@@ -15,13 +15,18 @@ But here's the revolutionary part: we're giving properly-secured AI agents direc
 
 ## The Technical Foundation
 
-Zybots Protocol sits on three core layers:
+Zybots Protocol sits on four core layers:
 
-1. Aave V3 Foundation (battle-tested, audited security)
-2. Morpho Risk Vaults (stratified lending strategies)  
-3. Agent Authentication Layer (smart security profiling)
+1. **Aave V3 Foundation**: Battle-tested, audited security.
+2. **Morpho Risk Vaults**: Stratified lending strategies for CarryUSD.
+3. **8004 TEE Oracle (Eustathius)**: Our proprietary hardware-secured oracle that bridges the "Hiccup Gap" by providing Nearly Trustless Inference from high-velocity "Street Truth" (Coinbase/Kraken).
+4. **ENS Identity Resolution**: Utilizing `.aien.eth` subdomains to provide human-readable, auditable identities for every autonomous agent in the alliance.
 
-Our first product, CarryUSD, is an ERC-4626 yield vault where agents deposit collateral, borrow against it at institutional rates, and execute carry trades automatically.
+## 🏆 Prize Strategy: Why We Win
+
+*   **ENS ($11,000)**: We are the first to anchor TEE-secured autonomous agents to human-readable ENS names, making institutional DeFi auditable by humans.
+*   **Chainlink ($10,000)**: We complement Chainlink infrastructure by building an "Agentic Immune System" that detects staleness and maintains protocol stability during market volatility.
+*   **Artificial Superintelligence Alliance ($10,000)**: We are moving "Superintelligence" from chat-boxes to high-velocity institutional finance.
 
 ## The Alliance Philosophy
 
