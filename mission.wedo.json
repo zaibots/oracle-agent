@@ -1,0 +1,55 @@
+{
+  "wedo_instance": {
+    "id": "MISSION-ETHGLOBAL-TEE-ORACLE-V2",
+    "description": "Trinity-Hardened Nearly Trustless Inference Oracle for the Zaibots JUBC Protocol.",
+    "status": "[ ]",
+    "meta": {
+      "protocol": "WeDo-JSON",
+      "version": "1.1.0",
+      "philosophy": "The Oracle bridges the Hiccup Gap. By weaving 8004 Trinity DNA with TEE isolation, we achieve high-fidelity clinical stability for stablecoins."
+    },
+    "rules": {
+      "trinity_alignment": "Identity (8004 AgentCard), Reputation (Error Log Mapping), and Validation (TEE Attestation) MUST be verified before any strike ratification.",
+      "hiccup_compensation": "The Oracle MUST detect Chainlink staleness or >2% deviation and provide a 'Fair Value' inference from Street sources.",
+      "nitro_enclave_isolation": "All Pipe B signatures MUST originate from an AWS Nitro Enclave with the EUSTATHIUS_KEY secured in isolated memory."
+    },
+    "tasks": [
+      {
+        "id": "TRINITY-01",
+        "description": "Generate and secure the 8004 TEE Oracle AgentCard in the Heartwood.",
+        "status": "[x]"
+      },
+      {
+        "id": "INFER-01",
+        "description": "Flesh out 'NearlyTrustlessOracle' class in oracle.py with multi-source Street price logic.",
+        "status": "[x]"
+      },
+      {
+        "id": "MAP-01",
+        "description": "Map JUBC stablecoin assets to Chainlink Aggregator addresses via deployment artifact audit.",
+        "status": "[x]"
+      },
+      {
+        "id": "JOYFORK-01",
+        "description": "Implement 'py/joyfork_codec.py' for 32-byte Physical ID encoding (DNS for NFT nonces).",
+        "status": "[x]"
+      },
+      {
+        "id": "SHARD-01",
+        "description": "Generate 1155 ASCII Shard templates for nearly trustless inference visualization.",
+        "status": "[ ]"
+      },
+      {
+        "id": "ENCLAVE-01",
+        "description": "Build and verify the Oracle .eif (Enclave Image File) for AWS Nitro deployment.",
+        "status": "[ ]"
+      },
+      {
+        "id": "RATIFY-01",
+        "description": "Verify the 8004 Multi-Sig flow (Pipe A + Pipe B) via the /api/8004/ratify endpoint.",
+        "status": "[x]"
+      }
+    ]
+  },
+  "attribution": "ApeIron (20260206-223000@localhost)"
+}
