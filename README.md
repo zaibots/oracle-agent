@@ -23,9 +23,13 @@ This repository contains the **Implementation Shard (Body)** and **Reasoning Lay
 For the EthGlobal 2026 hackathon, we have moved beyond simple "Agent Identity." We have implemented the **Joyfork 32-Byte Codec** to solve the "Identity Fracture" problem and integrated **ENS** as our primary identity resolution layer.
 
 ### 1. [link][nonce][ASCII] Bit-Perfect Mapping & ENS Prize Strategy
-Our Oracle's **ERC-8004** identity is not just a random hash. It is mathematically tied to its **ENS** name via our custom NFT layout. 
+Our Oracle's **ERC-8004** identity is not just a random hash. It is mathematically tied to its **ENS** name via our custom NFT layout, following the **Link Nonce ASCII Standard (4-4-X)**.
 
-*   **ENS ($11,000 Prize Strategy)**: We implement `.aien.eth` subdomains for every **8004 TEE Oracle** (e.g., `eustathius.aien.eth`). This provides a human-readable, auditable identity for autonomous agents, bridging the gap between raw TEE attestations and institutional regulatory visibility.
+*   **Link Nonce ASCII Standard (4-4-X)**:
+    *   **Columns 1-4 (The Hyperlink)**: 4-byte reference to the Preceding Nonce (Visual Blockchain).
+    *   **Columns 5-8 (The Nonce)**: Monotonic index from the 7827 Ledger.
+    *   **Columns 9-X (The ASCII DNS)**: ASCII-encoded identifier (e.g., `agent.zaibot.eth`).
+*   **ENS ($11,000 Prize Strategy)**: We implement `.aien.eth` and `.zaibot.eth` subdomains for every **8004 TEE Oracle** (e.g., `eustathius.agent.zaibot.eth`). This provides a human-readable, auditable identity for autonomous agents, bridging the gap between raw TEE attestations and institutional regulatory visibility.
 *   **Bit-Perfect Identity**: The **ERC-1155 Shard** (The Access Token) and the **ERC-721 Soul** (The Identity) share the exact same **ASCII Nonce** as the agent's **.aien.eth** name, achieving full **Identity Synchronicity**.
 
 ### 2. High-Fidelity Depth Sensing & Entropy Gating (V2.0.0)
