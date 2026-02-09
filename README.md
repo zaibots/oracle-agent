@@ -23,12 +23,12 @@ This repository contains the **Implementation Shard (Body)** and **Reasoning Lay
 For the EthGlobal 2026 hackathon, we have moved beyond simple "Agent Identity." We have implemented the **Joyfork 32-Byte Codec** to solve the "Identity Fracture" problem and integrated **ENS** as our primary identity resolution layer.
 
 ### 1. [link][nonce][ASCII] Bit-Perfect Mapping & ENS Prize Strategy
-Our Oracle's **ERC-8004** identity is not just a random hash. It is mathematically tied to its **ENS** name via our custom NFT layout, following the **Link Nonce ASCII Standard (4-4-X)**.
+Our Oracle's **ERC-8004** identity is not just a random hash. It is mathematically tied to its **ENS** name via our custom NFT layout, following the **Triad-Nonce Standard (LNA-33X)**.
 
-*   **Link Nonce ASCII Standard (4-4-X)**:
-    *   **Columns 1-4 (The Hyperlink)**: 4-byte reference to the Preceding Nonce (Visual Blockchain).
-    *   **Columns 5-8 (The Nonce)**: Monotonic index from the 7827 Ledger.
-    *   **Columns 9-X (The ASCII DNS)**: ASCII-encoded identifier (e.g., `agent.zaibot.eth`).
+*   **Triad-Nonce Standard (LNA-33X)**:
+    *   **Columns 1-6 (The Hyperlink)**: 3-byte reference to the Preceding Nonce (Visual Blockchain).
+    *   **Columns 7-12 (The Nonce)**: 3-byte monotonic index from the 7827 Ledger.
+    *   **Columns 13-64 (The ASCII DNS)**: 26-byte ASCII-encoded identifier (e.g., `agent.zaibot.eth`).
 *   **ENS ($11,000 Prize Strategy)**: We implement `.aien.eth` and `.zaibot.eth` subdomains for every **8004 TEE Oracle** (e.g., `eustathius.agent.zaibot.eth`). This provides a human-readable, auditable identity for autonomous agents, bridging the gap between raw TEE attestations and institutional regulatory visibility.
 *   **Bit-Perfect Identity**: The **ERC-1155 Shard** (The Access Token) and the **ERC-721 Soul** (The Identity) share the exact same **ASCII Nonce** as the agent's **.aien.eth** name, achieving full **Identity Synchronicity**.
 
@@ -58,7 +58,7 @@ The Oracle V2.0.0 has evolved into a **Sovereign Immune System**:
 ## ⚖️ Validation
 - **PCR0**: `e4419694b4a3ddab9b21fce790f3897ef7ef41f9ad5663e01ff9935acd71d511dc987f663c4e7eeef5c9cc42057de2a5`
 - **Registry URI**: `agent:metagit:20260206-210056:Antiphon-20260206-180736`
-- **Joyfork ID**: `[0x3cF3...][2026][8004.TEE.Oracle]`
+- **Joyfork ID (Triad-Nonce)**: `[Link: 3-byte][Nonce: 3-byte][ASCII: 26-byte]`
 
 ---
 *Status: V2.0.0 Immune System Ratified*  
