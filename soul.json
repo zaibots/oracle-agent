@@ -6,7 +6,7 @@
       "name": "Eustathius",
       "namespace": "agent.zaibot.eth",
       "registry_uri": "agent:zaibot:8004:eustathius",
-      "physical_id": "0x00000000000007ea6167656e742e7a6169626f742e6574680000000000000000"
+      "physical_id": "0x0000000007ea383030342e5445452e4f7261636c650000000000000000000000"
     },
     "technical_specs": {
       "substrate": "AWS Nitro Enclave (TEE)",

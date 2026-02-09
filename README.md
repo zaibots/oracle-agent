@@ -32,7 +32,22 @@ Our Oracle's **ERC-8004** identity is not just a random hash. It is mathematical
 *   **ENS ($11,000 Prize Strategy)**: We implement `.aien.eth` and `.zaibot.eth` subdomains for every **8004 TEE Oracle** (e.g., `eustathius.agent.zaibot.eth`). This provides a human-readable, auditable identity for autonomous agents, bridging the gap between raw TEE attestations and institutional regulatory visibility.
 *   **Bit-Perfect Identity**: The **ERC-1155 Shard** (The Access Token) and the **ERC-721 Soul** (The Identity) share the exact same **ASCII Nonce** as the agent's **.aien.eth** name, achieving full **Identity Synchronicity**.
 
-### 2. High-Fidelity Depth Sensing & Entropy Gating (V2.0.0)
+### 2. Forensic Analysis: The Triad-Nonce (LNA-33X) Pivot
+We have evaluated the **3-3-26** layout (Link-Nonce-ASCII) as the optimal "Structural Sweet Spot" for sovereign identity resolution.
+
+| Attribute | 2-2-28 (LNA-22X) | **3-3-26 (LNA-33X)** | 4-4-24 (LNA-44X) |
+| :--- | :--- | :--- | :--- |
+| **Link Capacity** | 65,535 | **16,777,215** | 4.2 Billion |
+| **Nonce Capacity** | 65,535 | **16,777,215** | 4.2 Billion |
+| **ASCII Shard** | 28 Bytes | **26 Bytes** | 24 Bytes |
+| **Alignment** | uint16 | **uint24** | uint32 |
+
+#### ⚖️ Clinical Assessment
+1.  **Headroom**: 16 million possible links/nonces is significantly more resilient for a sovereign swarm than 65k, while avoiding the "over-allocation" of 4 bytes.
+2.  **Namespace**: 26 characters perfectly fits `agent.zaibot.eth` (16 chars) and allows for a 10-character unique prefix (e.g., `eustathi.agent.zaibot.eth`).
+3.  **Alignment**: uint24 is natively supported in Solidity and easily handled via `struct.pack(">I", val)[1:]` in Python.
+
+### 3. High-Fidelity Depth Sensing & Entropy Gating (V2.0.0)
 The Oracle V2.0.0 has evolved into a **Sovereign Immune System**:
 - **High-Fidelity Depth Sensing**: Calculates the **Effective Exit Price** (VWAP) for $100k of liquidity across global order books (Kraken/Coinbase).
 - **Entropy-Weighted Gating**: Dynamically tightens deviation thresholds (adaptive base 2%) by analyzing **24h Market Entropy** (volatility).
